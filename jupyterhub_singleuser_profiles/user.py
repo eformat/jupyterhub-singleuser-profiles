@@ -3,6 +3,7 @@ import copy
 import logging
 
 _LOGGER = logging.getLogger(__name__)
+_LOGGER.setlevel('DEBUG')
 
 class User(object):
   _DEFAULT_USER_PRESETS = {

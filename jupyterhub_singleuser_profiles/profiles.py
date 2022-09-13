@@ -17,6 +17,7 @@ from jupyterhub_singleuser_profiles import sizes
 
 
 _LOGGER = logging.getLogger(__name__)
+_LOGGER.setlevel('DEBUG')
 
 _JUPYTERHUB_USER_NAME_ENV = "JUPYTERHUB_USER_NAME"
 _USER_CONFIG_PROFILE_NAME = "@singleuser@"

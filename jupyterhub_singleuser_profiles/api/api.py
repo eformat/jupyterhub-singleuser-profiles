@@ -24,6 +24,7 @@ _PROFILES = SingleuserProfiles(notebook_namespace=custom_notebook_namespace, ver
 _PROFILES.load_profiles()
 
 _LOGGER = logging.getLogger(__name__)
+_LOGGER.setlevel('DEBUG')
 
 prefix = os.environ.get('JUPYTERHUB_SERVICE_PREFIX', '/')
 
