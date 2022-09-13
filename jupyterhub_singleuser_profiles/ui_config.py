@@ -7,7 +7,7 @@ import logging
 import yaml
 
 _LOGGER = logging.getLogger(__name__)
-_LOGGER.setlevel('DEBUG')
+_LOGGER.setLevel('DEBUG')
 
 class GpuCheckbox(BaseModel):
     value: int = 1

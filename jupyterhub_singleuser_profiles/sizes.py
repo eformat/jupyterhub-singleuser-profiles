@@ -5,7 +5,7 @@ from .utils import parse_resources
 
 
 _LOGGER = logging.getLogger(__name__)
-_LOGGER.setlevel('DEBUG')
+_LOGGER.setLevel('DEBUG')
 
 class Sizes(object):
     def __init__(self, sizes, openshift):

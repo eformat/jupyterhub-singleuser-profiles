@@ -12,7 +12,7 @@ import re
 
 
 _LOGGER = logging.getLogger(__name__)
-_LOGGER.setlevel('DEBUG')
+_LOGGER.setLevel('DEBUG')
 
 _SERVICE_LABEL="jupyterhub-singluser-service"
 _REFERENCE_CM_NAME = "singleuser-service-ref-%s"

@@ -7,7 +7,7 @@ from pydantic import BaseModel
 from typing import List, Optional
 
 _LOGGER = logging.getLogger(__name__)
-_LOGGER.setlevel('DEBUG')
+_LOGGER.setLevel('DEBUG')
 IMAGE_LABEL = 'opendatahub.io/notebook-image'
 DEFAULT_IMAGE_ANNOTATION = 'opendatahub.io/default-image' #Used to find a default image is a user does not select any image
 DESCRIPTION_ANNOTATION = 'opendatahub.io/notebook-image-desc'

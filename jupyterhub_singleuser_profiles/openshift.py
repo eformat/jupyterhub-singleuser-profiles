@@ -15,7 +15,7 @@ from prometheus_api_client import PrometheusConnect
 urllib3.disable_warnings()
 
 _LOGGER = logging.getLogger(__name__)
-_LOGGER.setlevel('DEBUG')
+_LOGGER.setLevel('DEBUG')
 
 
 class OpenShift(object):
