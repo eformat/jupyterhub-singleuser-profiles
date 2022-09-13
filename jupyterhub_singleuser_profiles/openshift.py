@@ -66,7 +66,7 @@ class OpenShift(object):
       return result
 
     if key_name:
-      result = yaml.load(config_map.data[key_name])
+      result = yaml.full_load(config_map.data[key_name])
     else:
       result = config_map.data
     return result
@@ -84,7 +84,7 @@ class OpenShift(object):
     if secret.data:
       if key_name:
         content = self.decode_secret(secret.data[key_name])
-        result = yaml.load(content)
+        result = yaml.full_load(content)
       else:
         result = dict([(key, self.decode_secret(value)) for key, value in secret.data.items()])
 
